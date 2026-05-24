@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== FONTS ===== */
+@font-face {
+  font-family: "Caitlin Script";
+  src: url("/assets/fonts/caitlin-script.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "True Typewriter";
+  src: url("/assets/fonts/true-typewriter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: "Caitlin Script", cursive;
+  background-color: #efeee0;
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== ANIMATION ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1 {
+  width: 100%;
+  font-size: clamp(42px, 6vw, 50px);
+  color: #ba4b2f;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/* ===== MAIL SECTION ===== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-wrapper {
+  position: relative;
+  width: clamp(320px, 38vw, 520px);
+}
+
+.mail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.flower-1 {
+  position: absolute;
+  width: clamp(120px, 14vw, 180px);
+  height: auto;
+  top: -70px;
+  left: -80px;
+  z-index: 1;
+}
+
+.flower-2 {
+  position: absolute;
+  width: clamp(130px, 15vw, 190px);
+  height: auto;
+  bottom: -65px;
+  right: -80px;
+  z-index: 1;
+}
+
+/* ===== BUTTON SECTION ===== */
+.btn-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  width: clamp(330px, 35vw, 460px);
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.btn-text {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "True Typewriter", monospace;
+  font-size: clamp(14px, 1.4vw, 20px);
+  color: #ba4b2f;
+  text-decoration: underline;
+  white-space: nowrap;
+  cursor: pointer;
+}
