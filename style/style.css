@@ -124,3 +124,24 @@ h1 {
   white-space: nowrap;
   cursor: pointer;
 }
+
+/* ===== RESPONSIVE MOBILE FLOWERS ===== */
+@media (max-width: 480px) {
+  .mail-wrapper {
+    width: clamp(280px, 82vw, 360px);
+  }
+
+  .flower-1 {
+    width: clamp(80px, 24vw, 110px);
+    top: -20px;
+    left: -50px;
+    transform: translate(-35%, -35%);
+  }
+
+  .flower-2 {
+    width: clamp(85px, 26vw, 120px);
+    bottom: -30px;
+    right: -50px;
+    transform: translate(35%, 35%);
+  }
+}

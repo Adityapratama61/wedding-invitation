@@ -1221,7 +1221,7 @@ body {
   }
 
   .ours-wrapper {
-    min-height: 1180px;
+    min-height: 1120px;
   }
 
   .ours-couple-left {
@@ -1236,9 +1236,10 @@ body {
     width: min(66vw, 340px);
     left: 50%;
     right: auto;
-    top: 650px;
+    top: 600px;
     bottom: auto;
     transform: translateX(-50%);
+    z-index: 3;
   }
 
   .ours-ribbon {
@@ -1272,29 +1273,31 @@ body {
 
   .ours-star-1 {
     width: 48px;
-    top: 625px;
+    top: 570px;
     right: 16%;
   }
 
   .ours-star-2 {
     width: 28px;
-    top: 680px;
+    top: 620px;
     left: 18%;
     right: auto;
   }
 
   .ours-star-3 {
     width: 44px;
-    top: 840px;
+    top: 790px;
     right: 10%;
   }
 
   .ours-ring-flower {
     width: 250px;
-    right: auto;
     left: 50%;
-    bottom: 10px;
+    right: auto;
+    top: 980px;
+    bottom: auto;
     transform: translateX(-50%);
+    z-index: 2;
   }
 }
 
@@ -1371,7 +1374,7 @@ body {
     width: 210px;
     left: 50%;
     right: auto;
-    bottom: 0;
+    bottom: -40px;
     transform: translateX(-50%);
   }
 }
